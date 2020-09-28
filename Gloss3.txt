@@ -1,0 +1,44 @@
+alias|An alternative name for a column or table in a SQL statement.
+ALTER TABLE|The SQL command used to make changes to table structure. When the command is followed by a keyword (ADD or MODIFY), it adds a column or changes column characteristics.
+AND|The SQL logical operator used to link multiple conditional expressions in a WHERE or HAVING clause. It requires that all conditional expressions evaluate to true.
+authentication|The process through which a DBMS verifies that only registered users can access the database.
+AVG|A SQL aggregate function that outputs the mean average for a specified column or expression.
+BETWEEN|In SQL, a special comparison operator used to check whether a value is within a range of specified values.
+Boolean algebra|A branch of mathematics that uses the logical operators OR, AND, and NOT.
+cascading order sequence|A nested ordering sequence for a set of rows, such as a list in which all last names are alphabetically ordered and, within the last names, all first names are ordered.
+COMMIT|The SQL command that permanently writes data changes to a database.
+COUNT|A SQL aggregate function that outputs the number of rows containing not null values for a given column or expression, sometimes used in conjunction with the DISTINCT clause.
+CREATE INDEX|A SQL command that creates indexes on the basis of a selected attribute or attributes.
+CREATE TABLE|A SQL command that creates a table's structures using the characteristics and attributes given.
+DELETE|A SQL command that allows data rows to be deleted from a table.
+DISTINCT|A SQL clause that produces only a list of values that are different from one another.
+DROP INDEX|A SQL command that permanently deletes an index.
+DROP TABLE|A SQL command that permanently deletes a table and its data.
+EXISTS|In SQL, a comparison operator that checks whether a subquery returns any rows.
+FROM|A SQL clause that specifies the table or tables from which data is to be retrieved.
+GROUP BY|A SQL clause used to create frequency distributions when combined with any of the aggregate functions in a SELECT statement.
+HAVING|A clause applied to the output of a GROUP BY operation to restrict selected rows.
+IN|In SQL, a comparison operator used to check whether a value is among a list of specified values.
+inner query|A query that is embedded or nested inside another query. Also known as a nested query or a subquery.
+INSERT|A SQL command that allows the insertion of one or more data rows into a table.
+International Organization for Standardization (ISO)|An organization formed to develop standards for diverse network systems.
+IS NULL|In SQL, a comparison operator used to check whether an attribute has a value.
+LIKE|In SQL, a comparison operator used to check whether an attribute's text value matches a specified string pattern.
+MAX|A SQL aggregate function that yields the maximum attribute value in a given column.
+message|In the OO data model, the name of a method sent to an object in order to perform an action. A message triggers the object's behavior. See method.
+method|In the object-oriented data model, a named set of instructions to perform an action. Methods represent real-world actions, and are invoked through messages.
+middleware|The computer software that allows clients and servers to communicate within the client/server architecture. It is used to insulate client processes from the network protocols and the details of the server process protocols.
+MIN|A SQL aggregate function that yields the minimum attribute value in a given column.
+nested query|In SQL, a query that is embedded in another query. See subquery.
+NOT|A SQL logical operator that negates a given predicate.
+OR|The SQL logical operator used to link multiple conditional expressions in a WHERE or HAVING clause. It requires only one of the conditional expressions to be true.
+ORDER BY|A SQL clause that is useful for ordering the output of a SELECT query (for example, in ascending or descending order).
+recursive query|A nested query that joins a table to itself.
+reserved words|Words used by a system that cannot be used for any other purpose. For example, in Oracle SQL, the word INITIAL cannot be used to name tables or columns.
+ROLLBACK|A SQL command that restores the database table contents to the condition that existed after the last COMMIT statement.
+rules of precedence|Basic algebraic rules that specify the order in which operations are performed. For example, operations within parentheses are executed first, so in the equation 2 + (3 * 5), the multiplication portion is calculated first, making the correct answer 17.
+subquery|A query that is embedded (or nested) inside another query. Also known as a nested query or an inner query.
+SUM|A SQL aggregate function that yields the sum of all values for a given column or expression.
+UPDATE|A SQL command that allows attribute values to be changed in one or more rows of a table.
+WHERE|A SQL clause that adds conditional restrictions to a SELECT statement that limit the rows returned by the query.
+wildcard character|A symbol that can be used as a general substitute for: (1) all columns in a table (*) when used in an attribute list of a SELECT statement or, (2) zero or more characters in a SQL LIKE clause condition ( % and _ ).
