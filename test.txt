@@ -53,3 +53,45 @@ FROM Employees
 WHERE SALARY>10000;
 
 SELECT AVG(PRICE) FROM Books;
+
+CREATE TABLE CUSTOMERORDER (
+DonutorderID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CustomerID INT NOT NULL,
+DonutOrderTimestamp TIMESTAMP DEFAULT NOW(),
+SpecialNotes VARCHAR(500) NULL,
+FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID);
+);
+
+CREATE TABLE customerorder (
+DonutOrderID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CustomerID INT(11) NOT NULL,
+DonutOrderTimestamp TIMESTAMP DEFAULT NOW(),
+SpecialNotes VARCHAR(500) NULL,
+FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID));
+
+CustomerID 1,	LastName 'Pitt', FirstName 'Brad',Street 'Paris Lane', Apt '1', City 'Hollywood', State 'CA', Zip '11111' HomePhone '111-111-1111', MobilePhone '111-111-1112', OtherPhone '111-111-1113';
+CustomerID 2,	LastName 'Jolie', FirstName 'Angelina',Street '1 Paris Lane', Apt '1', City 'Hollywood', State 'CA', Zip '11111' HomePhone '222-222-2221', MobilePhone '222-222-2222', OtherPhone '222-222-2223';
+
+
+INSERT INTO Customer  (LastName,FirstName,Street,Apt,City,State,Zip,HomePhone,MobilePhone,OtherPhone)
+VALUES ('Pitt','Brad','1 Paris Lane','','Hollywood','CA',11111,'111-111-1111','111-111-1112','111-111-1113');
+INSERT INTO Customer  (LastName,FirstName,Street,Apt,City,State,Zip,HomePhone,MobilePhone,OtherPhone)
+VALUES ('Jolie','Angelina','1 Paris Lane','Apt. 1','Hollywood','CA',11111,'222-222-2221','222-222-2222','222-222-2223');
+
+INSERT INTO Donut (DonutName,DonutDescription,DonutPrice,DonutPhotoID)
+VALUES ('Plain','Plain Donut',1.50,'www.Donutphotos.com/Donut1.jpg');
+INSERT INTO Donut (DonutName,DonutDescription,DonutPrice,DonutPhotoID)
+VALUES ('Chocolate','Chocolate Donut',2.00,'www.Donutphotos.com/Donut2.jpg');
+
+INSERT INTO CustomerDonutOrder (CustomerID,DonutID,DonutOrderTimestamp,OrderQty,SpecialNotes)
+VALUES (1,1,'2014-01-01 16:00:00',3,'Please include plates and napkins');
+
+UPDATE uc_donutorder
+SET OrderQty=10
+WHERE DonutOrderID = 1;
+
+DELETE FROM test1 WHERE id=23;
+DELETE FROM test1 WHERE id=35;
+
+SELECT Orders.CUSTOMER_ID, CUSTOMER_NAME, ORDER_NAME
+FROM Customers, Orders;
