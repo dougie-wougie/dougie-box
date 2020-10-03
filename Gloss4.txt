@@ -1,0 +1,8 @@
+base tables|The table on which a view is based.
+batch update routine|A routine that pools transactions into a single group to update a master table in a single operation.
+correlated subquery|A subquery that executes once for each row in the outer query.
+CREATE VIEW|A SQL command that creates a logical, "virtual" table. The view can be treated as a real table.
+cross join|A join that performs a relational product (or Cartesian product) of two tables.
+set-oriented|Dealing with or related to sets, or groups of things. In the relational model, SQL operators are set-oriented because they operate over entire sets of rows and columns at once.
+updatable view|A view that can update attributes in base tables that are used in the view.
+view|A virtual table based on a SELECT query that is saved as an object in the database.
