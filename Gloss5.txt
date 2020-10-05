@@ -1,0 +1,29 @@
+access plan|A set of instructions generated at application compilation time that is created and managed by a DBMS. The access plan predetermines how an application's query will access the database at run time.
+algorithms|A process or set of operations in a calculation.
+automatic query optimization|A method by which a DBMS finds the most efficient access path for the execution of a query.
+B-tree index|An ordered data structure organized as an upside-down tree.
+bitmap index|An index that uses a bit array (0s and 1s) to represent the existence of a value or condition.
+buffer cache|See data cache.
+data cache|A shared, reserved memory area that stores the most recently accessed data blocks in RAM. Also called buffer cache.
+data files|A named physical storage space that stores a database's data. It can reside in a different directory on a hard disk or on one or more hard disks. All data in a database is stored in data files. A typical enterprise database is normally composed of several data files. A data file can contain rows from one or more tables.
+data sparsity|A column distribution of values or the number of different values a column can have.
+database performance tuning|A set of activities and procedures designed to reduce the response time of a database system—that is, to ensure that an end-user query is processed by the DBMS in the minimum amount of time.
+database statistics|In query optimization, measurements about database objects, such as the number of rows in a table, number of disk blocks used, maximum and average row length, number of columns in each row, and number of distinct values in each column. Such statistics provide a snapshot of database characteristics.
+DBMS performance tuning|Activities to ensure that clients' requests are addressed as quickly as possible while making optimum use of existing resources.
+dynamic query optimization|The process of determining the SQL access strategy at run time, using the most up-to-date information about the database.
+dynamic statistical generation mode|In a DBMS, the capability to automatically evaluate and update the database access statistics after each data access operation.
+extents|In a DBMS environment, refers to the ability of data files to expand in size automatically using predefined increments.
+file group|See table space.
+hash index|An index based on an ordered list of hash values.
+input/output (I/O) request|A low-level data access operation that reads or writes data to and from computer devices.
+manual query optimization|An operation mode that requires the end user or programmer to define the access path for the execution of a query.
+manual statistical generation mode|A mode of generating statistical data access information for query optimization. In this mode, the DBA must periodically run a routine to generate the data access statistics—for example, running the RUNSTAT command in an IBM DB2 database.
+procedure cache|See SQL cache.
+query optimizer|A DBMS process that analyzes SQL queries and finds the most efficient way to access the data. The query optimizer generates the access or execution plan for the query.
+query processing bottleneck|In query optimization, a delay introduced in the processing of an I/O operation that causes the overall system to slow down.
+rule-based query optimization algorithm|A query optimization technique that uses preset rules and points to determine the best approach to executing a query.
+SQL cache|A shared, reserved memory area that stores the most recently executed SQL statements or PL/SQL procedures, including triggers and functions. Also called procedure cache.
+SQL performance tuning|Activities to help generate a SQL query that returns the correct answer in the least amount of time, using the minimum amount of resources at the server end.
+static query optimization|A query optimization mode in which the access path to a database is predetermined at compilation time.
+statistically based query optimization algorithm|A query optimization technique that uses statistical information about a database. The DBMS then uses these statistics to determine the best access strategy.
+table space|In a DBMS, a logical storage space used to group related data. Also known as a file group.
